@@ -1,4 +1,4 @@
-# vue-demo
+# ga_cicd_way(for test github action)
 
 ## Project setup
 ```
