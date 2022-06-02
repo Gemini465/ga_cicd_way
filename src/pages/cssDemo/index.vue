@@ -22,7 +22,9 @@
     <div id="calendar">
       <Calendar />
     </div>
-    <div id="scrollbar"></div>
+    <div id="scrollbar">
+      <DragBar />
+    </div>
     <div id="js-ssh"></div>
   </div>
 </template>
@@ -32,6 +34,7 @@ import { onMounted } from 'vue';
 import aya from '../../assets/aya.jpg';
 import moon from '../../assets/417230622.jpg';
 import Calendar from '@/components/calendar/index.vue';
+import DragBar from '@/components/DragBar.vue';
 onMounted(() => {
   // play();
 });
@@ -84,6 +87,11 @@ onMounted(() => {
     height: 300px;
     width: 400px;
     margin: 20px auto;
+  }
+  #scrollbar {
+    height: 30px;
+    width: 500px;
+    margin: 40px auto;
   }
 }
 @keyframes scroll-text {
