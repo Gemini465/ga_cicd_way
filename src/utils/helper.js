@@ -38,3 +38,7 @@ export const bubbleSort = arr => {
   }
   return temp;
 };
+
+export const getFebDay = year => {
+  return year % 100 === 0 && year % 400 === 0 ? 29 : 28;
+};

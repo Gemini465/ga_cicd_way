@@ -31,15 +31,15 @@
 import { onMounted } from 'vue';
 import aya from '../../assets/aya.jpg';
 import moon from '../../assets/417230622.jpg';
-import Calendar from '@/components/calendar';
+import Calendar from '@/components/calendar/index.vue';
 onMounted(() => {
   // play();
 });
-const play = () => {
-  const imageList = document.querySelector('.imageList');
-  imageList.style.transition = 'all 12s ease-in-out';
-  imageList.style.marginLeft = '-200px';
-};
+// const play = () => {
+//   const imageList = document.querySelector('.imageList');
+//   imageList.style.transition = 'all 12s ease-in-out';
+//   imageList.style.marginLeft = '-200px';
+// };
 </script>
 
 <style scoped lang="less">
@@ -58,7 +58,7 @@ const play = () => {
       //writing-mode: vertical-lr;
       white-space: nowrap;
       //word-wrap: break-word;
-      animation: scroll-text 20s linear infinite;
+      // animation: scroll-text 20s linear infinite;
     }
   }
   #img-scroll {
@@ -70,7 +70,7 @@ const play = () => {
     .imageList {
       height: 200px;
       width: 1800px;
-      animation: fadeIn 16s ease-in-out alternate infinite;
+      // animation: fadeIn 16s ease-in-out alternate infinite;
       &:hover {
         animation-play-state: paused;
       }
@@ -79,6 +79,11 @@ const play = () => {
         height: 100%;
       }
     }
+  }
+  #calendar {
+    height: 300px;
+    width: 400px;
+    margin: 20px auto;
   }
 }
 @keyframes scroll-text {
